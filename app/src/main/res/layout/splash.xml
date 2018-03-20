@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/one"
+        android:src="@drawable/logodesignfull"
+        android:layout_centerInParent="true"/>
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_below="@+id/one"
+        android:src="@drawable/mantext"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp" />
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

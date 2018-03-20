@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/cityDialogHeader"
+    android:layout_height="wrap_content" />
+    <com.ssaxena36.quizzer.customfonts.MyEditText
+        android:id="@+id/text_layout"
+        android:layout_below="@+id/cityDialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:background="#f0f0f4"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/building"
+        android:drawablePadding="16dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/done"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        android:textSize="15sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

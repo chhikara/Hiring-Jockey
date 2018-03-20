@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/recyclerView"
+    android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/no_selections"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/fuel"
+            android:id="@+id/fuler"
+            android:layout_height="70dp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fuler"
+            android:layout_marginTop="10dp"
+            android:id="@+id/texter"
+            android:text="Eh? Nothing to Apply for?"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
